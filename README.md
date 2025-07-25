@@ -1,5 +1,9 @@
 # esp-idf-lib/bh1900nux
 
+[![Build examples](https://github.com/esp-idf-lib/bh1900nux/actions/workflows//build.yml/badge.svg)](https://github.com/esp-idf-lib/bh1900nux/actions/workflows//build.yml)
+[![Build docs](https://github.com/esp-idf-lib/bh1900nux/actions/workflows//build-docs.yml/badge.svg)](https://github.com/esp-idf-lib/bh1900nux/actions/workflows//build-docs.yml)
+[![Validation](https://github.com/esp-idf-lib/bh1900nux/actions/workflows//validate-component.yml/badge.svg)](https://github.com/esp-idf-lib/bh1900nux/actions/workflows//validate-component.yml)
+
 Driver for BH1900NUX temperature sensor.
 
 * [Documentation](https://esp-idf-lib.github.io/bh1900nux/)
@@ -11,7 +15,7 @@ Driver for BH1900NUX temperature sensor.
 ## Installation
 
 ```sh
-idf.py add-dependency esp-idf-lib/bh1900nux^1.0.0
+idf.py add-dependency esp-idf-lib/bh1900nux
 ```
 
 ## Support
