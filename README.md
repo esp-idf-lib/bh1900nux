@@ -11,7 +11,7 @@ Driver for BH1900NUX temperature sensor.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/bh1900nux^1.0.0
+idf.py add-dependency esp-idf-lib/bh1900nux^1.0.0
 ```
 
 ## Support
