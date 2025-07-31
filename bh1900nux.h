@@ -52,7 +52,8 @@ extern "C" {
 /**
  * Fault queue size
  */
-typedef enum {
+typedef enum
+{
     BH1900NUX_FAULTS_1 = 0, //!< 1 fault to trigger ALERT pin
     BH1900NUX_FAULTS_2,     //!< 2 faults to trigger ALERT pin
     BH1900NUX_FAULTS_4,     //!< 4 faults to trigger ALERT pin
@@ -62,7 +63,8 @@ typedef enum {
 /**
  * ALERT pin polarity
  */
-typedef enum {
+typedef enum
+{
     BH1900NUX_ALERT_LOW = 0, //!< ALERT active low (default)
     BH1900NUX_ALERT_HIGH     //!< ALERT active high
 } bh1900nux_alert_polarity_t;
@@ -70,7 +72,8 @@ typedef enum {
 /**
  * Device operating mode
  */
-typedef enum {
+typedef enum
+{
     BH1900NUX_MODE_CONTINUOUS = 0, //!< Continuous measurement mode (default)
     BH1900NUX_MODE_SHUTDOWN        //!< Shutdown mode
 } bh1900nux_mode_t;
@@ -78,7 +81,8 @@ typedef enum {
 /**
  * Delay between measurements in continuous mode
  */
-typedef enum {
+typedef enum
+{
     BH1900NUX_WT_0 = 0, //!< 186240 * 16 / 450000 ~ 6.622s (Fosc = 450kHz)
     BH1900NUX_WT_1,     //!< 186240 * 4 / 450000 ~ 1.655s (Fosc = 450kHz)
     BH1900NUX_WT_2,     //!< 186240 / 450000 ~ 0.414s (Fosc = 450kHz)
@@ -88,7 +92,8 @@ typedef enum {
 /**
  * Device descriptor
  */
-typedef struct {
+typedef struct
+{
     i2c_dev_t i2c_dev;
     bh1900nux_mode_t mode;
 } bh1900nux_t;
