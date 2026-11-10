@@ -51,10 +51,6 @@ void test(void *pvParameters)
         float temp;
         esp_err_t r = bh1900nux_one_shot(&dev, &temp);
         if (r == ESP_OK)
-            /* float is used in printf(). you need non-default configuration in
-             * sdkconfig for ESP8266, which is enabled by default for this
-             * example. see sdkconfig.defaults.esp8266
-             */
             printf("Temperature: %.02f deg.C\n", temp);
         else
             printf("Could not read temperature: %d (%s)\n", r, esp_err_to_name(r));
